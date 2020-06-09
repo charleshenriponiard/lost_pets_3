@@ -1,0 +1,10 @@
+<div class="container">
+  <h2><%= @pet.name %></h2>
+  <p><%= @pet.address %></p>
+  <p><%= @pet.species %></p>
+  <p> <%= @pet.name %> was found <%= @pet.found_days_ago %> ago</p>
+
+  <%= link_to 'Modifier', edit_pet_path(@pet), class:"btn btn-info" %>
+  <%= link_to '<back', pets_path %>
+</div>
+
